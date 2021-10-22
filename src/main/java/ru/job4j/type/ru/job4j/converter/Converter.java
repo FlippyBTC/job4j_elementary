@@ -7,14 +7,14 @@ public class Converter {
 
 	public static float rubleToDollar(float value) {
 
-		return -1;
+		return value / 60;
 	}
 
 	public static void main(String[] args) {
 		float in = 140;
-		float expected = 2;
-		float out = Converter.rubleToEuro(in);
+		float expected = 2.3333333333F;
+		float out = Converter.rubleToDollar(in);
 		boolean passed = expected == out;
-		System.out.println("140 rubles are 2. Test result : " + passed);
+		System.out.println(passed);
 		}
 	}
